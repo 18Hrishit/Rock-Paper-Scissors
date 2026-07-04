@@ -1,0 +1,32 @@
+*{
+    background-color: #161515;
+}
+h1{
+    color: #ffffff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+#rock{
+
+}
+#scissors{
+
+}
+#paper{
+
+}
+button{
+    background-color: #ffffff;
+    color: #000000;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+#score{
+    background-color: #161515; 
+    color: #ffffff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 1px;
+    margin-bottom: 10px;
+}
+#reset{
+    background-color: #ffffff;
+    color: #000000;
+}

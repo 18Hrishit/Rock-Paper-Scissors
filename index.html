@@ -7,12 +7,23 @@
 </head>
 
 <body>
+    <h1>Rock Paper Scissors</h1>
     <main>
-        <button onclick="position('Rock');">Rock</button>
-        <button onclick="position('Scissors');">Scissors</button>
-        <button onclick="position('Paper');">Paper</button>
-        <button onclick = "score['losses']=0;score.ties=0;score.wins=0">Reset Score</button>
+        <button id="rock" onclick="position('Rock');">Rock</button>
+        <button id="scissors" onclick="position('Scissors');">Scissors</button>
+        <button id="paper" onclick="position('Paper');">Paper</button>
+        <div id="score">
+            Wins: <span id="wins">0</span>
+            Losses: <span id="losses">0</span>
+            Ties: <span id="ties">0</span>
+        </div>
+        <button id="reset" onclick="resetScore();
+        document.getElementById('wins').textContent = 0;
+        document.getElementById('losses').textContent = 0;
+        document.getElementById('ties').textContent = 0;">Reset Score</button>
     </main>
+    
+
 
     <script src="page.js"></script>
 </body>
