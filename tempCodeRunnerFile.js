@@ -1,0 +1,10 @@
+const person = document.createElement('img');
+            person.src = 'rock.png';
+            person.alt = 'Rock';
+            person.width = 100;
+            const computerMove = document.createElement('img');
+            computerMove.src = 'rock.png';
+            computerMove.alt = 'Rock';
+            computerMove.width = 100;
+            document.getElementsById('choices').appendChild(person);
+            document.getElementsById('choices').appendChild(computerMove);
