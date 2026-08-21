@@ -9,14 +9,18 @@ document.getElementById('ties').textContent = score.ties;
 document.getElementById('rock').addEventListener('click', function(){
     position('Rock');
     document.getElementById('choices1').innerHTML = '<img src="rock.png" alt="Rock">';
+    document.getElementById('Uchoose').innerHTML = '<p>You choose Rock</p>';
 });
 document.getElementById('scissors').addEventListener('click', function(){
     position('Scissors');
     document.getElementById('choices1').innerHTML = '<img src="scissors.png" alt="Scissors">';
+    document.getElementById('Uchoose').innerHTML = '<p>You choose Scissors</p>';
+    
 });
 document.getElementById('paper').addEventListener('click', function(){
     position('Paper');
     document.getElementById('choices1').innerHTML = '<img src="paper.png" alt="Paper">';
+     document.getElementById('Uchoose').innerHTML = '<p>You choose Paper</p>';
 });
 
 
@@ -27,14 +31,17 @@ document.getElementById('paper').addEventListener('click', function(){
         if (val >= 0 && val < 1 / 3) {
             compmove = 'Rock';
             document.getElementById('choices2').innerHTML = '<img src="rock.png" alt="Rock">';
+            document.getElementById('compChoose').innerHTML = '<p>computer choose Rock</p>';
         }
         else if (val >= 1 / 3 && val < 2 / 3) {
             compmove = 'Paper';
             document.getElementById('choices2').innerHTML = '<img src="paper.png" alt="Paper">';
+            document.getElementById('compChoose').innerHTML = '<p>computer choose Paper</p>';
         }
         else {
             compmove = 'Scissors';
             document.getElementById('choices2').innerHTML = '<img src="scissors.png" alt="Scissors">';
+            document.getElementById('compChoose').innerHTML = '<p>computer choose Scissors</p>';
         }
         return compmove;
     }
