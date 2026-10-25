@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <main>
+        <button class="choice-btn" id="rock">
+            <img src="rock.png" alt="Rock">
+        </button>
+        <button class="choice-btn" id="scissors">
+            <img src="scissors.png" alt="Scissors">
+        </button>
+        <button class="choice-btn" id="paper">
+            <img src="paper.png" alt="Paper">
+        </button>
+        </div>
+        <div id="score">
+            Wins: <span id="wins">0</span>
+            Losses: <span id="losses">0</span>
+            Ties: <span id="ties">0</span>
+        </div>
+        <div id="choices">
+            <div>
+                <div id="choices1">
+                </div>
+                <div id="Uchoose"></div>
+            </div>
+            <div>
+                <div id="choices2">
+                </div>
+                <div id="compChoose"></div>
+            </div>
+        </div>
+
+        <button id="reset" onclick="resetScore();
+        document.getElementById('wins').textContent = 0;
+        document.getElementById('losses').textContent = 0;
+        document.getElementById('ties').textContent = 0;">Reset Score</button>
+    </main>
+    <script src="script.js"></script>
+</body>
